@@ -154,8 +154,7 @@ export default function ClientPage() {
   /* — Dark mode: read from localStorage on mount — */
   useEffect(() => {
     const saved = localStorage.getItem("ax-theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = saved ? saved === "dark" : prefersDark;
+    const isDark = saved ? saved === "dark" : true; // default: dark
     setDark(isDark);
     document.documentElement.classList.toggle("dark", isDark);
   }, []);
