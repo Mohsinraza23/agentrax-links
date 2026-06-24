@@ -16,11 +16,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AgentraX — Links",
     description: "AI Agents & Automation | Follow AgentraX on all platforms",
-    images: ["/logo.jpeg"],
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 1080,
+        height: 1080,
+        alt: "AgentraX Logo",
+      },
+    ],
     type: "website",
+    siteName: "AgentraX",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "AgentraX — Links",
     description: "AI Agents & Automation | Follow AgentraX on all platforms",
     images: ["/logo.jpeg"],
